@@ -194,6 +194,7 @@
 		2D18E65C20CEC4A4001A4D28 /* OSCrossEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */; };
 		2D18E65D20CEC4A4001A4D28 /* OSCrossEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */; };
 		2D18E66520CEC7FA001A4D28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D18E66420CEC7FA001A4D28 /* main.m */; };
+		2D18E67020CECA25001A4D28 /* libsystem_blocks.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0C705546C1D00DB518D /* libsystem_blocks.dylib */; };
 		831D5AD6122788D500E4A1EC /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EBF11543C0B0055083F /* Block_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		831D5AD7122788D500E4A1EC /* Block.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EC011543C0B0055083F /* Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		831D5AD9122788D500E4A1EC /* data.c in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC111543C0B0055083F /* data.c */; };
@@ -207,6 +208,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2D18E66D20CECA1F001A4D28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0C605546C1D00DB518D;
+			remoteInfo = Blocks;
+		};
 		3F23D0771A4757FF008445C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -309,6 +317,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D18E67020CECA25001A4D28 /* libsystem_blocks.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +364,7 @@
 				32C88DFF0371C24200C91783 /* Headers */,
 				2D18E66320CEC7FA001A4D28 /* MacClosureDemo */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				2D18E66F20CECA25001A4D28 /* Frameworks */,
 			);
 			name = Blocks;
 			sourceTree = "<group>";
@@ -534,6 +544,13 @@
 				2D18E66420CEC7FA001A4D28 /* main.m */,
 			);
 			path = MacClosureDemo;
+			sourceTree = "<group>";
+		};
+		2D18E66F20CECA25001A4D28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Headers */ = {
@@ -755,6 +772,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2D18E66E20CECA1F001A4D28 /* PBXTargetDependency */,
 			);
 			name = MacClosureDemo;
 			productName = MacClosureDemo;
@@ -926,6 +944,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2D18E66E20CECA1F001A4D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0C605546C1D00DB518D /* Blocks */;
+			targetProxy = 2D18E66D20CECA1F001A4D28 /* PBXContainerItemProxy */;
+		};
 		3F23D0781A4757FF008445C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC0C605546C1D00DB518D /* Blocks */;
@@ -955,21 +978,12 @@
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-nostdlib",
-					"-L/usr/lib/system/",
+					"-L$(SDKROOT)/usr/lib/system",
 					"-lsystem_malloc",
 					"-lsystem_c",
 					"-ldyld",
-					"-Wl,-umbrella,System",
 				);
-				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
-					"-lCrashReporterClient",
-					"-nostdlib",
-					"-L/usr/lib/system/",
-					"-lsystem_malloc",
-					"-lsystem_sim_c",
-					"-ldyld",
-					"-Wl,-umbrella,System",
-				);
+				"OTHER_LDFLAGS[sdk=macosx*]" = "";
 				PRODUCT_NAME = system_blocks;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include;
 			};
@@ -991,14 +1005,13 @@
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-nostdlib",
-					"-L/usr/lib/system/",
+					"-L$(SDKROOT)/usr/lib/system/",
 					"-lsystem_malloc",
 					"-lsystem_c",
 					"-ldyld",
 					"-Wl,-umbrella,System",
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
-					"-lCrashReporterClient",
 					"-nostdlib",
 					"-L/usr/lib/system/",
 					"-lsystem_malloc",
