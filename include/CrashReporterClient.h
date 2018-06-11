@@ -37,8 +37,10 @@
 
 #else /* !LIBC_NO_LIBCRASHREPORTERCLIENT */
 
+#error "not found <CrashReporterClient.h>"
+
 /* Include the real CrashReporterClient.h */
-//#include_next <CrashReporterClient.h>
+#include_next <CrashReporterClient.h>
 
 #endif /* !LIBC_NO_LIBCRASHREPORTERCLIENT */
 
