@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		184DB9CD20D39CDC004E82EB /* BDBlockLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 184DB9CC20D39CDC004E82EB /* BDBlockLayout.cpp */; };
+		184DB9D020D3A614004E82EB /* TestBlock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 184DB9CF20D3A614004E82EB /* TestBlock.mm */; };
 		2D18E5B320CEC4A4001A4D28 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E56E20CEC4A4001A4D28 /* CrashReporterClient.h */; };
 		2D18E5B420CEC4A4001A4D28 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E56E20CEC4A4001A4D28 /* CrashReporterClient.h */; };
 		2D18E5B520CEC4A4001A4D28 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E56E20CEC4A4001A4D28 /* CrashReporterClient.h */; };
@@ -193,7 +195,7 @@
 		2D18E65B20CEC4A4001A4D28 /* OSCrossEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */; };
 		2D18E65C20CEC4A4001A4D28 /* OSCrossEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */; };
 		2D18E65D20CEC4A4001A4D28 /* OSCrossEndian.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */; };
-		2D18E66520CEC7FA001A4D28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D18E66420CEC7FA001A4D28 /* main.m */; };
+		2D18E66520CEC7FA001A4D28 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D18E66420CEC7FA001A4D28 /* main.mm */; };
 		2D18E67020CECA25001A4D28 /* libsystem_blocks.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0C705546C1D00DB518D /* libsystem_blocks.dylib */; };
 		831D5AD6122788D500E4A1EC /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EBF11543C0B0055083F /* Block_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		831D5AD7122788D500E4A1EC /* Block.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EC011543C0B0055083F /* Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -244,6 +246,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		184DB9CB20D39CDC004E82EB /* BDBlockLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBlockLayout.h; sourceTree = "<group>"; };
+		184DB9CC20D39CDC004E82EB /* BDBlockLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BDBlockLayout.cpp; sourceTree = "<group>"; };
+		184DB9CE20D3A614004E82EB /* TestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		184DB9CF20D3A614004E82EB /* TestBlock.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestBlock.mm; sourceTree = "<group>"; };
 		2D18E56E20CEC4A4001A4D28 /* CrashReporterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporterClient.h; sourceTree = "<group>"; };
 		2D18E56F20CEC4A4001A4D28 /* _simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
 		2D18E57120CEC4A4001A4D28 /* queue_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue_private.h; sourceTree = "<group>"; };
@@ -302,7 +308,7 @@
 		2D18E5B020CEC4A4001A4D28 /* dyld_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld_priv.h; sourceTree = "<group>"; };
 		2D18E5B220CEC4A4001A4D28 /* OSCrossEndian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCrossEndian.h; sourceTree = "<group>"; };
 		2D18E66220CEC7FA001A4D28 /* MacClosureDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacClosureDemo; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D18E66420CEC7FA001A4D28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D18E66420CEC7FA001A4D28 /* main.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		831D5ADF122788D500E4A1EC /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EF75961507C1CE00581A2E /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AAC0C705546C1D00DB518D /* libsystem_blocks.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsystem_blocks.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -541,7 +547,11 @@
 		2D18E66320CEC7FA001A4D28 /* MacClosureDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2D18E66420CEC7FA001A4D28 /* main.m */,
+				2D18E66420CEC7FA001A4D28 /* main.mm */,
+				184DB9CB20D39CDC004E82EB /* BDBlockLayout.h */,
+				184DB9CC20D39CDC004E82EB /* BDBlockLayout.cpp */,
+				184DB9CE20D3A614004E82EB /* TestBlock.h */,
+				184DB9CF20D3A614004E82EB /* TestBlock.mm */,
 			);
 			path = MacClosureDemo;
 			sourceTree = "<group>";
@@ -907,7 +917,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D18E66520CEC7FA001A4D28 /* main.m in Sources */,
+				184DB9D020D3A614004E82EB /* TestBlock.mm in Sources */,
+				2D18E66520CEC7FA001A4D28 /* main.mm in Sources */,
+				184DB9CD20D39CDC004E82EB /* BDBlockLayout.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
